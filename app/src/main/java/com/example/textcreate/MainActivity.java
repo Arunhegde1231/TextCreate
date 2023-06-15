@@ -17,9 +17,6 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
     private EditText editText;
-    private Button createButton;
-    private Button saveButton;
-    private Button openButton;
 
     private File file;
 
@@ -29,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         editText = findViewById(R.id.editTextText);
-        createButton = findViewById(R.id.createButton);
-        saveButton = findViewById(R.id.saveButton);
-        openButton = findViewById(R.id.openButton);
+        Button createButton = findViewById(R.id.createButton);
+        Button saveButton = findViewById(R.id.saveButton);
+        Button openButton = findViewById(R.id.openButton);
 
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
