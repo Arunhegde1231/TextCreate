@@ -98,11 +98,12 @@
         android:height="200dp"
         android:background="@drawable/background"
         android:ems="10"
-        android:hint="  Enter filename"
+        android:hint="@string/enter_filename"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
