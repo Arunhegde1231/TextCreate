@@ -17,6 +17,7 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
     private EditText editText;
+    private EditText filename;
 
     private File file;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         editText = findViewById(R.id.editTextText);
+        filename=findViewById(R.id.fileNameEditText);
         Button createButton = findViewById(R.id.createButton);
         Button saveButton = findViewById(R.id.saveButton);
         Button openButton = findViewById(R.id.openButton);
@@ -53,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void createFile() {
-        String fileName = "example.txt";
+        String fileName = filename.getText().toString();
+        if(fileName.isEmpty()){
+            Toast.makeText(MainActivity.this, "Enter a file name",Toast.LENGTH_SHORT).show();
+        }
         File documentsFolder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
         file = new File(documentsFolder, fileName);
         try {
