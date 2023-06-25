@@ -144,8 +144,6 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
-
     @SuppressLint("Range")
     private String getFileName(Uri uri) {
         String result = null;
