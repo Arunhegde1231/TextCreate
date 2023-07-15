@@ -6,4 +6,9 @@
     <string name="save">Save</string>
     <string name="create">Create</string>
     <string name="enter_filename">  Enter filename</string>
+    <string name="welcome_to_textedit">Welcome to TextEdit!</string>
+    <string name="start">Start</string>
+    <string name="intro">Do powerful things with the TextEdit App! You can create, edit and save any .txt file just like on a desktop computer.</string>
+    <string name="intro1">Do powerful things with TextCreate</string>
+    <string name="click_start_to_enter">Click start to enter</string>
 </resources>
