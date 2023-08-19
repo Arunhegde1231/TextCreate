@@ -82,15 +82,29 @@
         android:layout_marginBottom="660dp"
         android:width="300dp"
         android:height="200dp"
+        android:autofillHints=""
         android:background="@drawable/background"
         android:ems="10"
-        android:hint="  @string/enter_filename"
-        android:inputType="text"
         android:gravity="center"
+        android:hint="@string/enter_filename"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="685dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/maker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
